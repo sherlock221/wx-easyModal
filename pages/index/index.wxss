@@ -1,0 +1,9 @@
+/* pages/index/index.wxss */
+
+.modal-content{
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,57 @@
+<!--pages/index/index.wxml-->
+<view>
+
+    <button catchtap='_onShowModal' data-type="first">显示第一个模态弹窗(带动画)</button>
+    <button catchtap='_onShowModal' data-type="second">显示第二个模态弹窗(不带动画)</button>   
+     <button catchtap='_onShowModal' data-type="base">基础模态</button>   
+</view>
+
+<easy-modal  
+      id="easyModal" 
+      title="这个是标题 01"   
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEventFirst"  
+      >
+
+      <view class='modal-content'>
+             <text> 这是内容部分 01 </text>     
+             <text> 这是内容部分 01 </text>     
+             <text> 这是内容部分 01 </text>                                             
+      </view>    
+
+</easy-modal>
+
+
+<easy-modal  
+      id="easyModalSecond" 
+      title="这个是标题 02"   
+      backdrop="{{false}}"    
+      animated="{{false}}"    
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEventSecond"  
+      >
+      <view class='modal-content'>
+             <text> 这是内容部分 02 </text>     
+             <text> 这是内容部分 02 </text>     
+             <text> 这是内容部分 02 </text>                                            
+      </view>    
+
+</easy-modal>
+
+<base-modal id="thridModal">
+  <view slot="header" class='modal-header'>
+        头部
+    </view>
+     <view slot="body" class='modal-body'>
+        中间
+    </view>
+ 
+    <view slot="footer" class='modal-footer'>
+         尾部      
+    </view>
+
+</base-modal>
+
+
+<!-- slider 组件 -->
+<!-- <slider-component myBehaviorProperty="test001"  source="{{imgUrls}}"  options="{{options}}"></slider-component> -->

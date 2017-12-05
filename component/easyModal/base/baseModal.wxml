@@ -1,0 +1,23 @@
+
+  <view  animation="{{animationData}}"  hidden="{{!isShow}}"  class='modal'>
+
+     <view  data-type="mask"  catchtap='hideModal' class='modal-mask' ></view>
+  
+      <view  class='modal-layer  modal-layer-radius {{modalSize == "sm" ? " modal-layer-sm" : " modal-layer-md" }} ' >
+
+        <!-- 头部 -->
+          <view class='modal-header'>        
+              <slot name="header"></slot>             
+          </view>
+
+          <!-- 内容区域 -->
+          <view class='modal-body'>         
+               <slot name="body"></slot>                          
+          </view>
+
+          <view class='modal-footer'>
+               <slot name="footer"></slot>                     
+          </view>
+      </view>
+  </view>
+

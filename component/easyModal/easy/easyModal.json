@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "base-modal" : "../base/baseModal"
+  }
+}

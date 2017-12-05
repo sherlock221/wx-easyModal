@@ -1,0 +1,17 @@
+
+<base-modal id="baseModal"   modalSize="{{modalSize}}"  animated="{{animated}}"  backdrop="{{backdrop}}">
+
+    <view slot="header" class='modal-header'>
+        <text>{{title}}</text>
+    </view>
+
+     <view slot="body" class='modal-body'>
+        <slot></slot>
+    </view>
+ 
+    <view slot="footer" class='modal-footer'>
+         <text catchtap='_cancelModal' class='btn btn-default'>{{cancelText}}</text>
+         <text catchtap='_confirmModal'  class='btn btn-primary'>{{confirmText}}</text>      
+    </view>
+
+</base-modal>

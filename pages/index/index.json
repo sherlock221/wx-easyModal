@@ -1,0 +1,8 @@
+{
+  
+    "usingComponents": {
+      "easy-modal": "/component/easyModal/easy/easyModal",
+      "base-modal": "/component/easyModal/base/baseModal"
+    }
+  
+}
