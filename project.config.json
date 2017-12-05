@@ -9,7 +9,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.6.6",
-	"appid": "wx8700e8505a038515",
+	"appid": "",
 	"projectname": "wx-easyModal",
 	"condition": {
 		"search": {

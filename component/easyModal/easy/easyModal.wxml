@@ -1,6 +1,5 @@
 
 <base-modal id="baseModal"   modalSize="{{modalSize}}"  animated="{{animated}}"  backdrop="{{backdrop}}">
-
     <view slot="header" class='modal-header'>
         <text>{{title}}</text>
     </view>
