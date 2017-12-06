@@ -23,10 +23,21 @@
 使用方式
 
 1. copay easyModal 文件夹到 你的公共组件目录
-2. 在业务page中引入组件  别忘记json里面声明component
-
+2. 在业务page 配置json
 ```
-  <easy-modal  
+{ 
+  
+    "usingComponents": {
+      "easy-modal": "/component/easyModal/easy/easyModal",    
+    }
+  
+}
+```
+
+3.在业务page中 引入组件
+ 
+```
+   <easy-modal  
       id="easyModal" 
       title="这个是标题 01"   
       bind:cancelEvent="_cancelEvent"  
@@ -37,7 +48,7 @@
              <text> 这是内容部分 01 </text>                                             
       </view>    
 
-</easy-modal>
+</easy-modal> 
 
 ```
 
